@@ -6,6 +6,8 @@ var cities=[];
 fetch(endpoint).then(blob=>blob.json()).then(data=>cities.push(...data));
 
 //find matching words using regex 
+
+console.log(cities);
 function findMatches(word,cities){
 	return cities.filter(place=>{
    
